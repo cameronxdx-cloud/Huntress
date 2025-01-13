@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical Aspects & Features.md",
+                "file": "Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Technical Aspects & Features"
+              "title": "Dashboard"
             }
           }
         ],
@@ -185,8 +185,8 @@
   },
   "active": "b6769843e26b34cf",
   "lastOpenFiles": [
-    "Dashboard.md",
     "Technical Aspects & Features.md",
+    "Dashboard.md",
     "attachments/Pasted image 20250110163336.png",
     "attachments"
   ]
