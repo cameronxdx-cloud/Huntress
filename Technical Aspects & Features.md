@@ -1,0 +1,38 @@
+- **Agent Installation:** The Huntress agent is easily installed with an account key, organization key, and optional tags. Supports silent installs and integrations with many RMM tools.
+	- _"download the huntress agent installer run the installer account key organization key and you can add tags"_
+- **Operating System Support:** Supports various Windows operating systems, including Pro, Education, Enterprise, Home and Server.
+- **Managed AV:**Huntress can manage Microsoft Defender antivirus (Windows Pro versions).
+	- _"the managed av is not available unless you're using windows pro and ideally you should be using this if you're dealing with businesses"_
+- Allows enforcement of AV policies, scheduling scans and signature updates, and configuration of exclusions.
+	- _"you can go to inherit settings as in whatever settings you already have for microsoft av you can audit the settings against all these different options...or you can say enforce"_
+- It can also remediate threats found by the AV with manual approval.
+	- _"if it's possible to fix something via the alert you have the remediation plan and this is nice especially when you have something just minor on the system...they have these options to remediate this"_
+- **External Recon:** Huntress monitors external IPs and open ports of devices, providing valuable network intelligence.
+	- _"This is how the external recon works it'll look to see what ports are open and does have that as something it monitors"_
+- **Auto Runs Monitoring:** Provides details on all auto-run programs, including their classifications (internal to Huntress) and VirusTotal results. This can be seen per organization which is helpful with line of business apps.
+	- _"the grouping of organizations seen on these agents it specifically means seen on these agents within this organization...this is very helpful when you have clients with line of business applications where you may see it deployed and know which machines it's on"_
+- **Process Insights:**A feature which gives insights into how a process behaves, specifically the commands it is executing.
+	- _"process insights giving you insight into how a process behaves... it's digging into the commands that's being run"_
+- Helps in identifying potentially malicious or suspicious activities, including evasion attempts.
+	- _"you may see something that was spawned by cmd exe or one of the other things like svc host but then what is it trying to do and this is often an evasion method"_
+- Was able to detect mimikatz and registry dumps in the demo.
+	- _"you can see i'd ran some mimikats on here i did a registry dump and this is one of those behavioral things that the process insights can really pick up on"_
+- **Binary Monitoring:** Provides detailed information about all binaries found on the system, including hashes.
+	- _"this is just listing all the binaries it finds on the system... we can look at the different binaries"_
+- **Ransomware Canaries:** The tool uses hidden files as canaries to detect ransomware activity, adding an additional trigger.
+	- _"they have set up ransomware canaries essentially inside of each system that you deploy huntress on...it's one more indicator that if something triggers if something messes with these files"_
+- **Host Isolation:** Allows for immediate isolation of a compromised host from the network (internet and local network), limiting lateral movement.
+	- _"this is the host isolation with the goal being to prevent lateral movement now if something gets on that system in this particular system the next concern is what else will this threat actor do"_
+- Communication is limited to only the Huntress servers to allow for investigation and remediation.
+	- _"once you take it offline it only communicates with the huntress servers and goes into a full isolation mode"_
+- **Integration:** Huntress integrates with a variety of systems, including, Atera, Continuum, ConnectWise, Datto, Kaseya, Microsoft Intune, Ninja RMM, Solarwinds, Synchro, and more.
+
+**6. Incident Response & Reporting**
+
+- **Detailed Incident Reports:** Huntress generates human-reviewed incident reports containing specific information about the attack technique, what was done, and how to fix the situation.
+	- _"this is really important this was actually looked at by someone at huntress this wasn't just an automated we sent a report over to you"_
+- **Remediation Options:** Incident reports often include remediation recommendations, with options to directly remediate certain alerts through the platform.
+	- _"if it's possible to fix something via the alert you have the remediation plan and this is nice especially when you have something just minor on the system"_
+- **Alerting:** Alerts can be delivered via email or integrated into various alert systems and other tooling.
+	- _"all this is sent as an email as well can be integrated into different alert systems that you have"_
+- [What is the Huntress Managed Security Platform? – Huntress Product Support](https://support.huntress.io/hc/en-us/articles/15125647051923-What-is-the-Huntress-Managed-Security-Platform)
